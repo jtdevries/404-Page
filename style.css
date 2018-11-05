@@ -21,12 +21,13 @@ body
 }
 
 /*Back button*/
+
 .back
 {
   position: absolute;
   height: 30px;
   width: 80px;
-  text-align: center;
+  align-items: flex
   bottom: 10px;
   left: 10px;
   background-color: #ffffff;
