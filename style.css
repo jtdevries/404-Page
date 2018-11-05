@@ -1,0 +1,86 @@
+
+body
+{
+  background-color: #8f8f8f;
+  font-family: sans-serif;
+}
+.text
+{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 150px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 8px 0px #232323;
+}
+/*Back button*/
+.back
+{
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px #232323;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2 ease;
+}
+.back:active
+{
+  box-shadow: none;
+}
+/*image of link smiling*/
+.linksmile
+{
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  z-index: -1;
+}
+.linksmile:hover
+{
+  animation: MoveUpDown 1s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+/*Image of a dead link*/
+.link
+{
+position: absolute;
+top: 40%;
+left: 50%;
+}
+/*Image of a dead link shakes on mouseover*/
+.link:hover
+{
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
