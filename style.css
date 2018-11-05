@@ -44,18 +44,7 @@ body
   left: 18%;
   z-index: -1;
 }
-.linksmile:hover
-{
-  animation: MoveUpDown 1s linear infinite;
-}
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
-}
+
 /*Image of a dead link*/
 .link
 {
